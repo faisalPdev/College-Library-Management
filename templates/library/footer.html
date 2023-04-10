@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+	<title>Footer Example</title>
+	<style>
+	footer {
+		background-color: #262626;
+		color: white;
+		padding: 20px;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	footer a {
+		color: white;
+	}
+
+	footer h4 {
+		margin-bottom: 10px;
+	}
+
+	footer ul {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	}
+
+	footer ul li {
+		margin-bottom: 5px;
+	}
+
+	footer .get-help, footer .follow-us {
+		flex-basis: 50%;
+	}
+
+	@media only screen and (max-width: 600px) {
+		footer {
+			flex-wrap: wrap;
+			justify-content: center;
+			text-align: center;
+		}
+
+		footer .get-help, footer .follow-us {
+			flex-basis: 100%;
+		}
+	}
+	</style>
+</head>
+<body>
+	<footer>
+		<div class="get-help">
+			<h4>Get Help</h4>
+			<ul>
+				<li><a href="#">FAQs</a></li>
+				<li><a href="#">Contact Us</a></li>
+			</ul>
+		</div>
+		<div class="follow-us">
+			<h4>Follow Us</h4>
+			<ul>
+				<li><a href="#">Faceboook</li>
+				<li><a href="#">Twitter</a></li>
+				<li><a href="#">Instagram</a></li>
+			</ul>
+		</div>
+	</footer>
+</body>
+</html>
